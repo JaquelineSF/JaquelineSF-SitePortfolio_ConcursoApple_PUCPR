@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+/* Exemplo de estilo Flexbox para um layout responsivo */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header, .about, .certifications, .projects, .footer {
+  width: 100%;
+  max-width: 1200px; /* Limita a largura máxima para evitar que fique muito largo */
+  margin: 20px 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Layout responsivo usando Media Queries */
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row; /* No tamanho de tela maior, os itens ficam lado a lado */
+    justify-content: space-around;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* Ajuste para telas muito pequenas, como iPhone SE (largura de 375px) */
+@media (max-width: 375px) {
+  .header, .about, .certifications, .projects, .footer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
