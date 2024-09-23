@@ -1,17 +1,14 @@
 import React from 'react';
-import './Projects.css';
 
 const Projects = () => {
   return (
     <section id="projects" className="projects">
       <h2>Projetos</h2>
-      <div className="project-list">
-        <div className="project-item">
-          <h3>Projeto Python</h3>
-          <p>Descrição do projeto...</p>
-        </div>
-        {/* Adicione mais projetos aqui */}
-      </div>
+      <p>Aqui estão alguns dos projetos que desenvolvi:</p>
+      <ul>
+        <li>Projeto 1: Descrição do projeto 1...</li>
+        <li>Projeto 2: Descrição do projeto 2...</li>
+      </ul>
     </section>
   );
 };
